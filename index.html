@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加入我们，共同开创AI数字人新纪元！</title>
+    <style>
+
+        body {
+            background-color: #f7f7f7;			
+			font-family: Arial, sans-serif;
+            line-height: 1.6;            
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 固定中间内容宽度 */
+        .container {
+            max-width: 1150px; /* 中间内容固定宽度，控制整个container覆盖的section、h、p等的宽度，放在<>中间，跟随着名称后面 */
+            margin: 0 auto; /* 水平居中 */
+        }
+		
+        header {
+			background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 36px;
+        }
+		header a {
+			color: white; /*#1E90FF; 链接颜色，海蓝色 */
+			text-decoration: underline; /* 去掉下划线 */
+		}
+		header a:hover {
+			color:#1E90FF; /*链接颜色，海蓝色 */
+			text-decoration: underline; /* 鼠标悬停时显示下划线 */
+		}		
+
+		<!-- 显示Logo备用
+		.header-section {
+			display: flex; /* 使用Flex布局，让Logo和文字在同一行 */
+			align-items: center; /* 垂直居中对齐 */
+			padding: 20px; /* 添加适当的内边距 */
+			text-align: center;
+		}
+
+		.header-section img {
+			width: 60px; /* Logo宽度 */
+			height: auto; /* 保持宽高比例 */
+			margin-right: 20px; /* Logo与文字之间的间距 */
+		}
+
+		.header-section h1 {
+			font-size: 36px; /* 标题文字大小 24*/
+			color: white; /* 海蓝色标题文字#1E90FF */
+			margin: 0; /* 去掉默认的外边距 */
+			text-align: center;
+		}
+
+		.header-section p {
+			font-size: 16px; /* 副标题文字大小 */
+			color: white; /* 深灰色副标题文字#333 */
+			margin: 5px 0 0; /* 副标题顶部间距 */
+			text-align: center;
+		}
+		-->
+		
+		footer {
+			background-color: #003366; /* 底部背景色 #f8f9fa;  #333;  */			
+			color: white; /* 文字颜色 #333; */
+			font-size: 14px; /* 字体大小 */
+			text-align: center; /* 居中对齐 */
+			padding: 20px 10px; /* 内边距 */
+            margin-top: 20px;
+			/* border-top: 1px solid #ddd; 顶部分割线 */
+		}
+		footer a {
+			color:white; /*原来颜色 #1E90FF;  链接颜色，海蓝色 */
+			text-decoration: underline; /* none去掉下划线 */
+		}
+		footer a:hover {
+			color:#1E90FF; /*链接颜色，海蓝色 */
+			text-decoration: underline; /* 鼠标悬停时显示下划线 */
+		}		
+		
+
+
+        .section-title {
+            background-color: #003366; 
+			font-size: 28px;
+            color: white;
+			padding: 20px;
+            margin-bottom: 20px;
+        }		
+        .section-content {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 20px;
+        }   
+		.section-content1 {
+			font-size: 38px; /* 设置字体大小为38号 */
+			color: #1E90FF; /* 设置海蓝色 */
+			margin-bottom: 20px;
+			text-align: center; /* 居中显示文字 */
+		}
+		
+
+		
+	    .text {
+            margin: 0 15px; /* 设置字符与图片的间距 */
+            font-size: 20px; /* 设置字符大小 */
+        }		
+	    .text1 {
+            margin: 0 15px; /* 设置字符与图片的间距 */
+            font-size: 20px; /* 设置字符大小 */
+            margin-bottom: 20px;
+        }		
+		.center-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%; /* 调整为适合的高度，例如页面中需要的高度 */
+			margin-bottom: 20px;
+			max-width: 630px;
+			width: 100%;
+			margin: 0 auto; /* 居中 */
+		}
+
+		
+
+        .img-container {/**/
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+        }
+		.image1 {
+			width: 100%;
+			max-width: 220px; /* 设置最大宽度 */
+            text-align: center;
+			margin: 0 auto; /* 居中 */
+            margin-bottom: 20px;
+		}
+		.image2 {
+			width: 100%;
+			max-width: 300px; /* 设置最大宽度 */
+            text-align: center;
+			margin: 0 auto; /* 居中 */
+            margin-bottom: 20px;
+		}
+
+	
+        .video-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }		
+		.video-container video {
+			width: 100%;
+			height: auto;
+		}
+		/* 为第一个 video 设置最大宽度 */
+		.video1 {
+			max-width: 200px;
+			width: 100%;
+			height: auto;
+			margin: 0 auto; /* 居中 */
+            margin-bottom: 20px;
+		}
+		/* 为第二个 video 设置最大宽度 */
+		.video2 {
+			max-width: 630px;
+			width: 100%;
+			height: auto;
+			margin: 0 auto; /* 居中 */
+		}			
+		.video3 {
+			max-width: 300px;
+			width: 100%;
+			height: auto;
+			margin: 0 auto; /* 居中 */
+		}			
+
+
+		
+		
+		.faq {
+            background-color: #eeeeee;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+			max-width: 1150px; /* 中间内容固定宽度 */
+			margin: 0 auto; /* 水平居中 */
+        }
+        .faq-title {
+            font-size: 22px;
+            color: #003366;
+        }
+        .faq-content {
+            font-size: 16px;
+            color: #333;
+            margin: 10px 0;
+        }
+		
+		
+		.center-button-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%; /* 调整为适合的高度，例如页面中需要的高度 */
+			margin-bottom: 20px;
+		}			
+		.apply-button {
+			background-color: #1E90FF; /* 按钮的深蓝色背景 */
+			color: white; /* 按钮文字颜色 */
+			border: none;
+			border-radius: 8px; /* 圆角 */
+			padding: 25px 50px; /* 按钮的内边距 */
+			font-size: 40px; /* 字体大小 */
+			font-weight: bold; /* 字体加粗 */
+			text-align: center;
+			text-decoration: none; /* 去掉超链接的下划线 */
+			cursor: pointer;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加按钮的阴影 */
+			transition: background-color 0.3s ease, transform 0.2s ease; /* 鼠标悬停时的效果 */
+		}			
+		.apply-button:hover {
+			background-color: #0056b3; /* 鼠标悬停时的深蓝色 */
+			transform: scale(1.05); /* 鼠标悬停时的放大效果 */
+		}			
+		.apply-button:active {
+			background-color: #003f7f; /* 按下时的颜色 */
+			transform: scale(0.98); /* 按下时的缩小效果 */
+		}		
+    </style>
+</head>
+<body>
+
+
+
+
+    <!-- Header Section -->
+    <header>
+        <h1>加入我们，共同开创AI数字人新纪元！</h1>
+        <p>成为AI数字人定制领域的先锋，共享未来科技带来的机遇！</p>
+		
+		<div class="center-container"> 
+			<video class="video1" controls>
+				<source src="sources/25.1 新春祝福_My First Work_42s.mp4" type="video/mp4" alt="Blessing by AI Digital Human">			
+				你的浏览器不支持视频播放。
+			</video>
+        </div>
+        <div>            
+			<video class="video2" controls>
+				<source src="sources/26.4 Pride and Prejudice_My First English Work.mp4" type="video/mp4" alt="Pride & Projudice video clip told by AI Digital Human">			
+				你的浏览器不支持视频播放。
+			</video>
+        </div>
+    </header>
+
+
+
+
+
+	
+	
+	
+	
+    <!-- Product Introduction -->
+    <section class="container">
+        <h2 class="section-title">什么是AI数字人？</h2>
+        <div class="section-content">
+            <p>AI数字人是基于最新的人工智能与虚拟现实技术，通过高度定制化服务为客户提供虚拟人类角色，广泛应用于教育、企业培训、娱乐等领域。我们的AI数字人具备自然的语音、外貌和行为，能够模拟真实人物，打破空间与时间的限制。</p>
+        </div>
+		<div class="img-container">
+			<img src="sources/75.1 大模型+虚拟成像技术.png" width="1000" height="360" controls alt="Large model + virtual imaging technology">
+		</div>
+
+
+		<div class="center-container"> 			
+			<span class="text1"> 数字人形象 </span>			
+        </div>		
+		<div class="center-container"> 			
+			<img class="image1" src="sources/25.3 数字人形象.png" controls alt="avatar">
+        </div>
+		<div class="center-container"> 			
+			<span class="text"> + </span>			
+        </div>
+		<div class="center-container"> 			
+			<span class="text1"> 背景图 </span>			
+        </div>		
+		<div class="center-container"> 			
+			<img class="image2" src="sources/25.4 背景.png" controls alt="Background">
+        </div>
+		<div class="center-container"> 			
+			<span class="text"> = </span>
+        </div>
+		<div class="center-container"> 			
+			<span class="text1"> 成片 </span>			
+        </div>		
+		<div class="center-container"> 			
+			<video class="video3" controls>
+				<source src="sources/25.1 新春祝福_My First Work_42s.mp4" type="video/mp4" alt="Blessing by AI Digital Human">			
+				你的浏览器不支持视频播放。
+			</video>
+        </div>
+    </section>
+	
+	
+	
+	
+	
+	
+	
+	
+    <!-- Why do this project section -->
+    <section class="container">
+        <h2 class="section-title">为什么做AI数字人？</h2>
+        <div class="section-content">
+            <p>历次产业革命，无不伴随着效率的巨大提升。无论是工业革命时期的蒸汽机，还是后来的电力、内燃机，亦或是信息时代的微处理器和电脑，都是如此。如今，一个崭新的时代已经到来 —— 人工智能。我们曾经错过了历史上的历次产业革命，但是我们不能再错过今天摆在我们面前的这次划时代的产业革命。无论你是否意识到，AI已经切切实实来到了我们的身边。而AI数字人的使用，不仅能帮助我们极大地提升效率，而且还能代替我们真身，做一些我们真人无法做到的事情。</p>
+            <p>AI技术已成为全球数字化转型的关键驱动力，AI技术和数字化技术正在改变各行各业，数字人的应用场景不断扩大，从虚拟助手到在线教育、虚拟演唱会等，市场需求持续增长。预计到2025年，数字人产业的市场规模将达到数十亿美元。</p>
+        </div>		
+        <div class="section-content">
+            <ul>
+                <li><strong>市场潜力：</strong>AI数字人在多个行业的应用潜力巨大，市场需求日益增长</li>
+                <li><strong>应用场景：</strong>图书馆、博物馆、在线教育、短视频带货、新闻播报、文化旅游讲解等</li>
+                <li><strong>无休无眠：</strong>AI数字人可以全年无休无眠，7天24小时工作</li>
+                <li><strong>代替真人：</strong>对小型企业，可以替代老板出境做视频、直播</li>
+                <li><strong>减少风险：</strong>直播企业人员流动大，有一定的人设风险，时间难把控，主播IP不稳定（你是否记得，前不久，某甄选直播间，某主播“西于光”，分道扬镳，赚得身价过亿）</li>
+                <li><strong>降低成本：</strong>招聘主播成本高，运营人力多，团队搭建贵，设备使用费用高</li>
+                <li><strong>提高时效：</strong>真人无法24小时开播，创作生产较慢，流程对接繁琐，磨合较耗时</li>
+                <li><strong>提升效率：</strong>过去需要数小时才能完成的视频制作等工作，现在只需几分钟，效率可以提升数倍、数十倍、数百倍……</li>
+                <li><strong>增加效益：</strong>有了这些无休无眠、不吃不喝、低本高效的AI数字人，经营者可以事半功倍、效益倍增</li>
+            </ul>
+        </div>
+		<div class="section-content1">
+            <p>不要认为我们是在推销产品，我们是在实实在在帮助别人！</p>
+        </div> 		     
+        <div class="img-container">
+            <!--<img src="path/to/your-benefits-image.jpg" alt="Partner Benefits">-->
+			<img src="sources/75.2 快速分钟级创作.png" width="500" height="360" controls alt="Quickly creating">
+			<img src="sources/75.4 数字人直播 解放真人.png" width="500" height="360" controls alt="Live streaming">
+ 		</div>		
+		<div class="img-container">
+			<img src="sources/75.5 数字人应用行业全景图.png" width="1000" height="360" controls alt="Whole picture">
+        </div>
+      </section>
+	  
+	 
+
+
+	 
+	  
+	  
+    <!-- Why Choose Us Section -->
+    <section class="container">
+        <h2 class="section-title">为什么选择与我们合作？</h2>
+        <div class="section-content">
+            <ul>
+                <li><strong>强大后盾：</strong>以腾讯技术作为背书，以腾讯云为依托，以腾讯混元大模型为基础（你认为，在当今中国，有哪个品牌能和腾讯竞争）</li>
+                <li><strong>技术领先：</strong>依托先进的AI算法和深度学习，创造真实的虚拟角色</li>
+                <li><strong>上市公司：</strong>三维通信，是深交所上市公司，国内主流的移动通信网络建设供应商及移动互联网信息综合服务商，技术实力不言而喻</li>
+                <li><strong>头部服务：</strong>巨网科技，与国内众多知名品牌合作，我敢打赌，你的手机里一定有一款App，是他们提供市场或技术服务的，比如，字节跳动（抖音）、美团外卖、滴滴出行、大众点评、百度……</li>
+                <li><strong>核心团队：</strong>核心团队由一群技术专家、市场精英和设计师组成，团队成员在AI、计算机视觉、品牌营销等领域有着深厚的经验</li>
+                <li><strong>团队优势：</strong>团队具备跨学科的背景，拥有强大的技术研发能力和广泛的行业资源，能够确保项目的顺利实施和成功</li>
+            </ul>
+        </div>		
+		<div class="img-container">
+			<img src="sources/75.6 为什么参与我们.png" width="1000" height="360" controls alt="Why join us">
+        </div>
+    </section>
+
+	
+
+
+
+	
+	
+	
+    <!-- Partner Benefits Section -->
+    <section class="container">
+        <h2 class="section-title">如何参与？</h2>
+        <div class="section-content">
+            <ul>
+                <li><strong>合作模式：</strong>多种合作模式，包括创业合伙人模式、代理商模式、战略合作模式、技术合作伙伴或定制服务提供商</li>
+                <li><strong>创业合伙人：</strong>签订正式合作协议，确保合伙人权利和资格</li>
+					<p>&nbsp&nbsp必须具备一定的动手能力和电脑操作能力（具备视频编辑能力优先）</p>
+					<p>&nbsp&nbsp最好具备一定的市场推广能力和资源</p>
+					<p>&nbsp&nbsp每周能自由安排工作时间5～10小时</p>
+					<p>&nbsp&nbsp缴纳创业合伙人保证金（满足一定条件时，全额退还。这个条件十分合理，不会刻意设置障碍）</p>
+                <li><strong>战略合伙人：</strong>在创业合伙人中择优选择合作对象，回报更加优厚</li>
+                <li><strong>其他合作形式：</strong>个别商谈</li>
+            </ul>			
+        </div>
+		
+        <div class="img-container">
+            <img src="sources/75.7 合伙人福利.webp" width="1000" height="360" controls alt="SOS">
+        </div>
+    </section>
+
+	
+	
+		
+
+
+
+	
+	
+	
+    <!-- Partner Benefits Section -->
+    <section class="container">
+        <h2 class="section-title">为什么你不能错过这个机会？</h2>
+        <div class="section-content">
+            <ul>
+                <li><strong>合作费用：</strong>和动辄几万几十万的合伙人保证金费用相比，我们的合伙人加入费用极低，低风险入驻，机会难得</li>
+                <li><strong>基础保障：</strong>签订正式合作协议，确保合伙人权利和资格</li>
+                <li><strong>高额提成：</strong>我们提供完善的分成机制，合作伙伴可根据销售业绩获得相应比例的提成</li>
+                <li><strong>激励机制：</strong>在完成目标的前提下，优异团队和个人，依据贡献大小还有额外奖励</li>
+                <li><strong>游学机会：</strong>业绩特异个人，还有机会获得海外游学赞助名额</li>
+                <li><strong>合作升级：</strong>表现优异者，还有机会升级合作。从创业合伙，到项目合伙，再到战略合伙</li>
+                <li><strong>学习赚钱两不误：</strong>除了学业，还能兼职工作，每周只需要几个小时的业余时间。少刷几部剧，少打几个游戏，就能获得物质回报</li>
+                <li><strong>毕业工作：</strong>当今竞争激烈，先行一步，为以后寻找工作，获取别人难以匹敌的优势</li>
+                <li><strong>最为关键：</strong>你家乡的市场，可能还没有开发。他们不懂得AI，但他们需要AI，他们急切需要你的帮助</li>				
+            </ul>			
+        </div>
+		
+        <div class="img-container">
+            <img src="sources/75.10 SOS.png" width="300" height="360" controls alt="Partner Rewards">
+        </div>
+    </section>
+
+	
+	
+	
+	
+	
+	
+    <!-- Call To Action -->
+    <section class="container">
+        <h2 class="section-title">立即加入我们的合作伙伴计划！</h2>
+        <div class="section-content">
+            <p>踏上与AI数字人共同成长的旅程，成为行业的一员。立即填写表单，加入我们！不管你是有创业梦想，还是希望通过合作获取稳定收入，加入我们，未来等你！</p>
+        </div>		
+		<div class="section-content1">
+            <p>心动不如行动！</p>
+            <p>ACTION！</p>
+        </div>	
+		<div class="center-button-container">			
+			<a href="sources/75.8 Partner_Application_Form.pdf" class="apply-button">立即申请成为合伙人</a>
+		</div>		
+    </section>
+	
+	
+	
+	
+	
+	
+	
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2 class="faq-title">常见问题</h2>
+        <div class="faq-content">
+            <p><strong>如何申请成为合伙人？</strong> 只需填写申请表单，我们将会在第一时间联系您。</p>
+            <p><strong>我能在哪些平台推广AI数字人？</strong> 您可以通过社交媒体、校园推广、线上平台等进行推广。</p>
+            <p><strong>是否需要投资资金？</strong> 不需要，加入我们的合作计划只需支付极低初期费用。</p>
+            <p><strong>合伙人能获得哪些培训支持？</strong> 我们提供线上培训、市场推广支持、产品使用指导等。</p>
+        </div>
+    </section>
+
+	
+	
+
+
+    <!-- Footer Section -->	
+    <footer>	
+			<p>北京黑箱科技有限公司  Copyright 2025</p>   
+			<p class="footer a"><a href="index.html">公司首页</a>  &nbsp;&nbsp; <a href="about.html">公司介绍</a> &nbsp;&nbsp; <a href="contacts.html">联系我们</p>
+    </footer>
+	
+	
+	
+	
+
+</body>
+</html>
