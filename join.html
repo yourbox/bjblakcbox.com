@@ -422,7 +422,72 @@
                 <button type="submit">提交</button>
                 <button type="reset">重置</button>
             </div>
-        </form>
+
+
+
+
+
+
+
+
+
+
+			
+			
+<div id="success-message" style="display: none;">
+    <h1>提交成功！</h1>
+    <p>感谢您的提交，我们会尽快与您联系。</p>
+</div>			
+			
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+        const successMessage = document.getElementById("success-message");
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault(); // 阻止默认提交行为
+
+            // 使用 Fetch API 提交表单数据
+            fetch("/", {
+                method: "POST",
+                body: new FormData(form),
+                headers: {
+                    "Accept": "application/json",
+                },
+            })
+                .then((response) => {
+                    if (response.ok) {
+                        // 显示成功信息
+                        form.style.display = "none";
+                        successMessage.style.display = "block";
+                    } else {
+                        alert("提交失败，请重试。");
+                    }
+                })
+                .catch((error) => {
+                    alert("提交失败，请重试。");
+                });
+        });
+    });
+</script>			
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	</form>
 
 
         <!-- 联系信息 -->
