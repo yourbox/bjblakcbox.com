@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>如何用数字人制作视频 —— 北京黑箱科技有限公司！</title>
+    <style>
+
+
+		body {
+            background-color: #f7f7f7;			
+			font-family: Arial, sans-serif;
+            line-height: 1.6;            
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+
+		/*  ------- Header  ------- */
+        header {
+			background-color: white;  		/* #003366; */
+            color: #003366;
+            text-align: center;
+ 			border-bottom: 1px solid red; 	/* 底部分割线 */
+       }
+ 
+       header h1 {
+            margin: 0;
+            font-size: 36px;
+        }		
+
+		/* Header 中的链接 */
+		header a {
+			color: #003366; 				/* 链接颜色，深蓝色 */
+            font-size: 15px; 				/* 设置字符大小 */
+            margin: 0 6px; 					/* 设置字符与图片的间距 */
+			text-decoration: none; 			/* underline 不显示下划线 */
+		}
+
+		header a:hover {
+			color: #1E90FF; 				/* 链接颜色，海蓝色 */
+			text-decoration: underline; 	/* 鼠标悬停时显示下划线 */
+		}
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 16px;
+        }
+
+		/* Header 中Logo图片的宽度	*/		
+		.header img {
+			width: 70px; 					/* Logo宽度 */
+			height: auto; 					/* 保持宽高比例 */
+		}
+
+		/* 设置header中心对齐 */
+		.header-center {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0 auto; 				/* 居中 */
+		}
+
+
+
+
+		/* -------  footer  ------- */
+		footer {
+			background-color: #003366; 		/* 底部背景色 #f8f9fa;  #333;  */			
+			color: white; 					/* 文字颜色 #333; */
+			font-size: 15px; 				/* 字体大小 */
+			text-align: center; 			/* 居中对齐 */
+			padding: 20px; 20px;			/* 内边距 */
+			margin-top: 10px; 				/* 外边距 */
+			border-top: 1px solid red;		/* #ddd; 顶部分割线 */
+		}
+
+		footer a {
+			color:white; 					/*原来颜色 #1E90FF;  链接颜色，海蓝色 */
+			text-decoration: underline; 	/* none去掉下划线 */
+			padding: 10px; auto;  			/* 内边距 */
+		}
+
+		footer a:hover {
+			color:#1E90FF; 					/* 链接颜色，海蓝色 */
+			text-decoration: underline; 	/* 鼠标悬停时显示下划线 */
+		}		
+
+		.footer img {
+			width: 100px; 					/* 二维码宽度 */
+			height: auto; 					/* 保持宽高比例 */
+			padding: 10px; auto; 			/* 内边距 */
+			margin: 10px; 0px;  0px; 0px;	/* 二维码之间的间距 */
+		}
+
+		footer p {
+			color:white; 					/*原来颜色 #1E90FF;  链接颜色，海蓝色 */
+			margin: 10px; 10px; 10px; 10px; /* 内边距 */
+		}
+
+
+
+/* ################################### end of 标准 header  footer ################################# */
+
+
+
+
+/* ===================================== start of Slogan 和 全页最大宽度参数 ================================= */
+
+
+		/*  ------- 设置Slogan section 参数 ------- */	
+		.slogan {
+			background-color: #003366;
+			color: white; 					/* #1E90FF; 链接颜色，海蓝色 */
+			padding: 10px; 					/* 添加适当的内边距 */
+			text-align: center;
+		}
+
+		.slogan h1 {
+			font-size: 36px; 				/* 标题文字大小 24*/
+			margin: 0 auto; 				/* 居中 */
+			margin-top: 10px; 				/* 去掉默认的外边距 */
+		}
+
+		.slogan p {
+			font-size: 20px; 				/* 副标题文字大小 */
+			margin: 5px; auto; 				/* 居中 */
+			margin-bottom: 20px; 			/* 副标题顶部间距 */
+		}		
+
+
+
+		/*  ------- 固定全页中间内容最大宽度 ------- */
+		/*  ------- 固定全页中间内容最大宽度 -- 标准模板用，此处被下面本页.container替代 -------
+		/* 在有主要内容的网页，经实际验证，最大1150 这个宽度页面在手机上显示时，不会左右移动 */
+        /* 但是对于次要页面，内容较少时，1150宽度显得有点太大，所以统一设置为最大宽度800*/
+        .container {
+            max-width: 1150px;				
+            margin: auto;
+            padding: 20px;
+        }
+
+
+/* ################################### end of Slogan 和 全页最大宽度参数 ################################# */
+
+
+
+
+
+/* ===================================== start of 本页内容设置 ================================= */
+
+
+		/* 设置顶部subtitle文字 */
+		.section-subtitle1 {
+			font-size: 32px; 				/* 设置字体大小为38号 */
+			color: #003366; 				/* 设置深蓝色 */
+			text-align: center; 			/* 居中显示文字 */
+			margin: 15px; 0 				/* */
+		}
+		/* 设置顶部subtitle文字 */
+		.section-subtitle2 {
+			font-size: 24px; 				/* 设置字体大小为24号 */
+			color: #003366; 				/* 设置深蓝色 */
+			margin: 5px; 0px;				/* */
+			text-align: center; 			/* 居中显示文字 */
+		}
+
+
+
+
+ 		/* ---------- 设置“合成视频”部分的图片参数 ----------- */
+		/* 设置图片最大宽度，且水平居中 */
+        .img-container {
+            text-align: center;
+            margin-bottom: 20px;
+            margin: 0 auto; 				/* 水平居中 */
+ 			height: auto;					/* 保持宽高比例 */				
+       }
+
+       .img-container img {
+            /* max-width: 100%;				！！！！！！这句必须删除，否则图形就是原始尺寸，很大！！！！！！ */
+            height: auto;
+        }
+
+
+	
+		/* 设置“祝福”数字人最大宽度 */
+		.image1 {
+			width: 100%;
+			max-width: 200px; 				/* 设置最大宽度 */
+            text-align: center;
+			margin: 0 auto; 				/* 居中 */
+            margin: 10px;
+		}
+
+		/* 设置“祝福”背景图最大宽度 */
+		.image2 {
+			width: 100%;
+			max-width: 260px; 				/* 设置最大宽度 */
+            text-align: center;
+			margin: 0 auto; 				/* 居中 */
+            margin: 10px;
+		}
+
+		/* 设置“Proud and Prejudice”数字人最大宽度 */
+		.image3 {
+			width: 100%;
+			max-width: 160px; 				/* 设置最大宽度 */
+            text-align: center;
+			margin: 0 auto; 				/* 居中 */
+            margin: 10px;
+		}
+
+		/* 设置“Proud and Prejudice”背景图最大宽度 */
+		.image4 {
+			width: 100%;
+			max-width: 360px; 				/* 设置最大宽度 */
+            text-align: center;
+			margin: 0 auto; 				/* 居中 */
+            margin: 10px;
+		}
+
+
+
+
+		/* ------------------ 设置视频参数 ------------------ */
+		/* video1 这个名字，保留用于首页第一个 video “祝福” 设置最大宽度 */
+		.video1 {
+			max-width: 340px;				/* 设置最大宽度 */
+			width: 100%;
+			height: auto;					/* 保持宽高比例 */
+			margin: 0 auto; 				/* 居中 */
+		}
+
+		/* 为第二个 video “Proude and Projudice"设置最大宽度 */
+		.video2 {
+			max-width: 360px;				/* 设置最大宽度 */
+			width: 100%;
+			height: auto;					/* 保持宽高比例 */				
+			margin: 0 auto; 				/* 居中 */
+            margin: 10px;
+		}			
+
+		/* 为 本页”祝福“ video 设置最大宽度 */
+		.video3 {
+			max-width: 260px;				/* 设置最大宽度 */
+			width: 100%;
+			height: auto;					/* 保持宽高比例 */
+			margin: 0 auto; 				/* 居中 */
+            margin: 10px;
+		}
+
+
+/* ################################### end of 本页内容设置 ################################# */
+
+
+	</style>
+</head>
+<body>
+
+	<!-- Header Section -->
+    <header>    
+		<div class="header-center"> 
+			<span class="header img"> <a href="index.html"> <img src="resources\76.50.2 logo_title_trans.png" alt="公司Logo"> </a> </span>
+			<span> <a href="how.html"> 如何做视频 </a> </span>
+			<span> <a href="learn.html"> 数字人 </a> </span>
+			<span> <a href="products.html"> 产品 </a> </span>
+			<span> <a href="join.html"> 想参与？ </a> </span>
+         </div>
+	</header>
+
+
+    <!-- Slogan section -->
+    <section class="slogan"> 		
+        <h1>参与AI，共同开创AI数字人新纪元！</h1>
+        <p>成为AI数字人定制领域的先锋，共享未来科技带来的机遇！</p>
+    </section>
+
+
+
+
+	<!-- ============================================= start of 本页”如何制作“内容 ===========================================  -->
+
+
+
+	<!-- How make videos section -->
+    <section class="container">
+ 		<div class="section-subtitle1">
+            <span>看，用数字人制作视频，就这么简单！</span>
+        </div> 		     
+ 		<div class="section-subtitle2">
+            <span>数字人形象 + 背景图 + 数字人声音 <font size=4px> & </font> 背景音乐 <font size=4px> & </font> 字幕 <font size=4px> & </font> 点缀 = 成片 </span>
+        </div> 		     
+        <div class="img-container">
+			<img class="image1" src="resources/25.3 数字人_又琳.png" controls alt="Digital Human">
+ 			<img class="image2" src="resources/25.4 背景_春节街景.jpg" controls alt="Background">
+ 			<img class="image2" src="resources/25.5 添加数字人声音背景音乐字幕点缀等.jpg" controls alt="Miscellaneous">
+			<video class="video3" controls>
+				<source src="resources/25.1 新春祝福_My First Work_42s_1080P.mp4" type="video/mp4" alt="Blessing by AI Digital Human">			
+				你的浏览器不支持视频播放。
+			</video>
+		</div>		
+        <div class="img-container">
+			<img class="image3" src="resources/26.6 数字人_慕瑶.png" controls alt="Digital Human">
+ 			<img class="image4" src="resources/26.7 背景_客厅.jpg" controls alt="Background">
+           
+			<video class="video2" controls>
+				<source src="resources/26.4 Pride and Prejudice_My First English Work.mp4" type="video/mp4" alt="Pride & Projudice video clip told by AI Digital Human">			
+				你的浏览器不支持视频播放。
+			</video>
+        </div>		
+	</section>
+
+
+	<!-- ################################################ end of 本页内容 ############################################  -->
+
+
+
+
+
+   <!-- Footer Section -->	
+    <footer>
+		<div> 
+			<div>
+				<p>微信公众号   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 官方抖音 </p>
+				<p class="footer img">
+					<span> <img src="resources\76.53 微信公众号.jpg" alt="微信公众号" > </span>
+					<span> <img src="resources\76.52.3 官方抖音_transparent_small.png" alt="官方抖音">  </span>
+				</p>
+			</div>
+			<div>
+				<div> 
+					<p><span>北京黑箱科技有限公司</span> <span> Copyright 2025</span> </p>
+				</div>
+				<div> 	
+					<span> <a href="index.html">公司首页</a> </span>
+					<span> <a href="about.html">公司介绍</a> </span>
+					<span> <a href="contacts.html">联系我们</a> </span>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+
+</body>
+</html>
