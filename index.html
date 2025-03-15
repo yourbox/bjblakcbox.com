@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北京黑箱科技 —— 加入我们，共同开创AI数字人新纪元！</title>
+    <style>
+
+
+
+		body {
+            background-color: #f7f7f7;			
+			font-family: Arial, sans-serif;
+            line-height: 1.6;            
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+
+		/*  ------- Header  ------- */
+        header {
+			background-color: white;  		/* #003366; */
+            color: #003366;
+            text-align: center;
+ 			border-bottom: 1px solid red; 	/* 底部分割线 */
+       }
+ 
+       header h1 {
+            margin: 0;
+            font-size: 36px;
+        }		
+
+		/* Header 中的链接 */
+		header a {
+			color: #003366; 				/* 链接颜色，深蓝色 */
+            font-size: 15px; 				/* 设置字符大小 */
+            margin: 0 6px; 					/* 设置字符与图片的间距 */
+			text-decoration: none; 			/* underline 不显示下划线 */
+		}
+
+		header a:hover {
+			color: #1E90FF; 				/* 链接颜色，海蓝色 */
+			text-decoration: underline; 	/* 鼠标悬停时显示下划线 */
+		}
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 16px;
+        }
+
+		/* Header 中Logo图片的宽度	*/		
+		.header img {
+			width: 70px; 					/* Logo宽度 */
+			height: auto; 					/* 保持宽高比例 */
+		}
+
+		/* 设置header中心对齐 */
+		.header-center {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0 auto; 				/* 居中 */
+		}
+
+
+
+
+		/* -------  footer  ------- */
+		footer {
+			background-color: #003366; 		/* 底部背景色 #f8f9fa;  #333;  */			
+			color: white; 					/* 文字颜色 #333; */
+			font-size: 15px; 				/* 字体大小 */
+			text-align: center; 			/* 居中对齐 */
+			padding: 20px; 20px;			/* 内边距 */
+			margin-top: 10px; 				/* 外边距 */
+			border-top: 1px solid red;		/* #ddd; 顶部分割线 */
+		}
+
+		footer a {
+			color:white; 					/*原来颜色 #1E90FF;  链接颜色，海蓝色 */
+			text-decoration: underline; 	/* none去掉下划线 */
+			padding: 10px; auto;  			/* 内边距 */
+		}
+
+		footer a:hover {
+			color:#1E90FF; 					/* 链接颜色，海蓝色 */
+			text-decoration: underline; 	/* 鼠标悬停时显示下划线 */
+		}		
+
+		.footer img {
+			width: 100px; 					/* 二维码宽度 */
+			height: auto; 					/* 保持宽高比例 */
+			padding: 10px; auto; 			/* 内边距 */
+			margin: 10px; 0px;  0px; 0px;	/* 二维码之间的间距 */
+		}
+
+		footer p {
+			color:white; 					/*原来颜色 #1E90FF;  链接颜色，海蓝色 */
+			margin: 10px; 10px; 10px; 10px; /* 内边距 */
+		}
+
+
+
+/* ################################### end of 标准 header  footer ################################# */
+
+
+
+
+/* ===================================== start of Slogan 和 全页最大宽度参数 ================================= */
+
+
+		/*  ------- 固定视频的宽度，中间对齐 ------- */	
+		.slogan {
+			background-color: #003366;
+			color: white; 					/* #1E90FF; 链接颜色，海蓝色 */
+			padding: 10px; 					/* 添加适当的内边距 */
+			text-align: center;
+		}
+
+		.slogan h1 {
+			font-size: 36px; 				/* 标题文字大小 24*/
+			margin: 0 auto; 				/* 居中 */
+			margin-top: 10px; 				/* 去掉默认的外边距 */
+		}
+
+		.slogan p {
+			font-size: 20px; 				/* 副标题文字大小 */
+			margin: 5px; auto; 				/* 居中 */
+			margin-bottom: 20px; 			/* 副标题顶部间距 */
+		}		
+
+
+		/*  ------- 固定全页中间内容最大宽度 ------- */
+		/*  ------- 固定全页中间内容最大宽度 -- 标准模板用，此处被下面本页.container替代 -------
+		/* 在有主要内容的网页，经实际验证，最大1150 这个宽度页面在手机上显示时，不会左右移动 */
+        /* 但是对于次要页面，内容较少时，1150宽度显得有点太大，所以统一设置为最大宽度800*/
+		.container {
+            max-width: 1150px; 				/* 中间内容固定宽度，控制整个container覆盖的section、h、p等的宽度，放在<>中间，跟随着名称后面 */
+            margin: 0 auto; 				/* 水平居中 */
+        }
+
+
+/* ################################### end of Slogan 和 全页最大宽度参数 ################################# */
+
+
+
+
+
+/* ===================================== start of 本页内容设置 ================================= */
+
+		/* ----------------- section 参数设置 -------------------*/
+		/* 设置节标题 */
+        .section-title {
+            background-color: #003366; 
+			font-size: 28px;
+            color: white;
+			padding: 20px;
+            margin-bottom: 20px;
+        }
+
+		/* 设置节文字 */
+        .section-content {
+            font-size: 16px;
+            color: #333;
+            margin: 20px;
+        } 
+
+		/* 设置节列表文字，左侧不缩进 */
+        .section-content1 {
+            font-size: 16px;
+            color: #333;
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+		.section-slogan {
+			font-size: 38px; 				/* 设置字体大小为38号 */
+			color: #1E90FF; 				/* 设置海蓝色 */
+			margin: 20px;
+			text-align: center; 			/* 居中显示文字 */
+		}		
+
+
+
+
+ 		/* ---------- 设置“合成视频”部分的图片参数 ----------- */
+		/* 设置图片最大宽度，且水平居中 */
+        .img-container {
+            text-align: center;
+            margin: 0 auto; 				/* 水平居中 */
+            margin-bottom: 20px;
+ 			max-width: 1000px;				/* 设置最大宽度 */
+			height: auto;					/* 保持宽高比例 */				
+       }
+
+       .img-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+
+		/* 设置“祝福”数字人最大宽度 */
+		.image1 {
+			width: 100%;
+			max-width: 260px; 				/* 设置最大宽度 */
+            text-align: center;
+			margin: 0 auto; 				/* 居中 */
+            margin-bottom: 20px;
+		}
+
+		/* 设置“祝福”背景图最大宽度 */
+		.image2 {
+			width: 100%;
+			max-width: 340px; 				/* 设置最大宽度 */
+            text-align: center;
+			margin: 0 auto; 				/* 居中 */
+            margin-bottom: 20px;
+		}
+		
+
+		/* 为第一个 video 设置最大宽度 */
+		.video1 {
+			max-width: 340px;				/* 设置最大宽度 */
+			width: 100%;
+			height: auto;					/* 保持宽高比例 */
+			margin: 0 auto; 				/* 居中 */
+		}
+
+
+
+ 		/*  ------- 申请按钮设置  ------- */
+		.center-button-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%; 					/* 调整为适合的高度，例如页面中需要的高度 */
+			margin-bottom: 20px;
+		}			
+
+		.apply-button {
+			background-color: #1E90FF; 		/* 按钮的深蓝色背景 */
+			color: white; 					/* 按钮文字颜色 */
+			border: none;
+			border-radius: 8px; 			/* 圆角 */
+			padding: 25px 50px; 			/* 按钮的内边距 */
+			font-size: 40px; 				/* 字体大小 */
+			font-weight: bold; 				/* 字体加粗 */
+			text-align: center;
+			text-decoration: none; 			/* 去掉超链接的下划线 */
+			cursor: pointer;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 						/* 添加按钮的阴影 */
+			transition: background-color 0.3s ease, transform 0.2s ease; 	/* 鼠标悬停时的效果 */
+		}			
+
+		.apply-button:hover {
+			background-color: green; 		/* #0056b3;鼠标悬停时的深蓝色 */
+			transform: scale(1.05); 		/* 鼠标悬停时的放大效果 */
+		}			
+
+		.apply-button:active {
+			background-color: #003f7f; 		/* 按下时的颜色 */
+			transform: scale(0.98); 		/* 按下时的缩小效果 */
+		}		
+
+
+
+
+		/* ------- 设置“常见问题”部分 -------- */
+		.faq {
+            background-color: #eeeeee;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+			max-width: 1150px; 				/* 中间内容固定宽度 */
+			margin: 0 auto; 				/* 水平居中 */
+        }
+ 
+       .faq-title {
+            font-size: 22px;
+            color: #003366;
+        }
+
+        .faq-content {
+            font-size: 16px;
+            color: #333;
+            margin: 10px 20px;
+        }
+
+
+/* ################################### end of 本页内容设置 ################################# */
+
+	</style>
+</head>
+<body>
+
+	<!-- Header Section -->
+    <header>    
+		<div class="header-center"> 
+			<span class="header img"> <a href="index.html"> <img src="resources\76.50.2 logo_title_trans.png" alt="公司Logo"> </a> </span>
+			<span> <a href="makevideo.html"> 做视频 </a> </span>
+			<span> <a href="avartar.html"> 数字人 </a> </span>
+			<span> <a href="products.html"> 产品 </a> </span>
+			<span> <a href="order.html"> 定制 </a> </span>
+         </div>
+	</header>
+
+
+    <!-- Slogan section -->
+    <section class="slogan"> 		
+        <h1>参与AI，共同开创AI数字人新纪元！</h1>
+        <p>成为AI数字人定制领域的先锋，共享未来科技带来的机遇！</p>
+		
+		<div> 
+			<video class="video1" controls>
+				<source src="resources/25.1 新春祝福_My First Work_42s_1080P.mp4" type="video/mp4" alt="Blessing by AI Digital Human">			
+				你的浏览器不支持视频播放。
+			</video>
+        </div>
+    </section>
+
+
+
+
+	<!-- ============================================= start of 本页”主页“内容 ===========================================  -->
+
+
+
+   <!-- Home Page -->
+    <section class="container">
+        <h2 class="section-title">什么是AI数字人？</h2>
+        <div class="section-content">
+            <p>AI数字人是基于最新的人工智能与虚拟现实技术，通过高度定制化服务为客户提供虚拟人类角色，广泛应用于教育、企业培训、娱乐等领域。我们的AI数字人具备自然的语音、外貌和行为，能够模拟真实人物，打破空间与时间的限制。</p>
+        </div>
+		<div class="img-container">
+			<img src="resources/75.1 大模型+虚拟成像技术.jpg" controls alt="Large model + virtual imaging technology">
+		</div>
+	</section>
+
+
+
+    <!-- Why do this project section -->
+    <section class="container">
+        <h2 class="section-title">为什么做AI数字人？</h2>
+        <div class="section-content">
+            <p>历次产业革命，无不伴随着效率的巨大提升。无论是工业革命时期的蒸汽机，还是后来的电力、内燃机，亦或是信息时代的微处理器和电脑，都是如此。如今，一个崭新的时代已经到来 —— 人工智能。我们曾经错过了历史上的历次产业革命，但是我们不能再错过今天摆在我们面前的这次划时代的产业革命。无论你是否意识到，AI已经切切实实来到了我们的身边。而AI数字人的使用，不仅能帮助我们极大地提升效率，而且还能代替我们真身，做一些我们真人无法做到的事情。</p>
+            <p>AI技术已成为全球数字化转型的关键驱动力，AI技术和数字化技术正在改变各行各业，数字人的应用场景不断扩大，从虚拟助手到在线教育、虚拟演唱会等，市场需求持续增长。预计到2025年，数字人产业的市场规模将达到数十亿美元。</p>
+        </div>		
+        <div class="section-content1">  <!-- li项左侧不缩进 -->
+            <ul>
+                <li><strong>市场潜力：</strong>AI数字人在多个行业的应用潜力巨大，市场需求日益增长</li>
+                <li><strong>应用场景：</strong>图书馆、博物馆、在线教育、短视频带货、新闻播报、文化旅游讲解等</li>
+                <li><strong>无休无眠：</strong>AI数字人可以全年无休无眠，7天24小时工作</li>
+                <li><strong>代替真人：</strong>对小型企业，可以替代老板出境做视频、直播</li>
+                <li><strong>减少风险：</strong>直播企业人员流动大，有一定的人设风险，时间难把控，主播IP不稳定（你是否记得，前不久，某甄选直播间，某主播“西于光”，分道扬镳，赚得身价过亿）</li>
+                <li><strong>降低成本：</strong>招聘主播成本高，运营人力多，团队搭建贵，设备使用费用高</li>
+                <li><strong>提高时效：</strong>真人无法24小时开播，创作生产较慢，流程对接繁琐，磨合较耗时</li>
+                <li><strong>提升效率：</strong>过去需要数小时才能完成的视频制作等工作，现在只需几分钟，效率可以提升数倍、数十倍、数百倍……</li>
+                <li><strong>增加效益：</strong>有了这些无休无眠、不吃不喝、低本高效的AI数字人，经营者可以事半功倍、效益倍增</li>
+            </ul>
+        </div>
+		<div class="section-slogan">
+            <p>不要认为我们是在推销产品，我们是在实实在在帮助别人！</p>
+        </div> 		     
+        <div class="img-container">
+			<img src="resources/75.2 快速分钟级创作.jpg" controls alt="Quickly creating">
+			<img src="resources/75.4 数字人直播 解放真人.jpg" controls alt="Live streaming">
+			<img src="resources/75.5 数字人应用行业全景图.jpg" controls alt="Whole picture">
+        </div>
+      </section>
+
+
+	<!-- Why Choose Us Section -->
+    <section class="container">
+        <h2 class="section-title">为什么选择与我们合作？</h2>
+        <div class="section-content1">
+            <ul>
+                <li><strong>强大后盾：</strong>以腾讯技术作为背书，以腾讯云为依托，以腾讯混元大模型为基础（你认为，在当今中国，有哪个品牌能和腾讯竞争）</li>
+                <li><strong>技术领先：</strong>依托先进的AI算法和深度学习，创造真实的虚拟角色</li>
+                <li><strong>上市公司：</strong>三维通信，是深交所上市公司，国内主流的移动通信网络建设供应商及移动互联网信息综合服务商，技术实力不言而喻</li>
+                <li><strong>头部服务：</strong>巨网科技，与国内众多知名品牌合作，我敢打赌，你的手机里一定有一款App，是他们提供市场或技术服务的，比如，字节跳动（抖音）、美团外卖、滴滴出行、大众点评、百度……</li>
+                <li><strong>核心团队：</strong>核心团队由一群技术专家、市场精英和设计师组成，团队成员在AI、计算机视觉、品牌营销等领域有着深厚的经验</li>
+                <li><strong>团队优势：</strong>团队具备跨学科的背景，拥有强大的技术研发能力和广泛的行业资源，能够确保项目的顺利实施和成功</li>
+            </ul>
+        </div>		
+		<div class="img-container">
+			<img src="resources/75.6 为什么参与我们.jpg" controls alt="Why join us">
+        </div>
+    </section>
+
+
+ 
+
+	<!-- ################################################ end of 本页内容 ############################################  -->
+
+
+
+
+	<!-- Footer Section -->	
+    <footer>
+		<div> 
+			<div>
+				<p>微信公众号   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 官方抖音 </p>
+				<p class="footer img">
+					<span> <img src="resources\76.53 微信公众号.jpg" alt="微信公众号" > </span>
+					<span> <img src="resources\76.52.3 官方抖音_transparent_small.png" alt="官方抖音">  </span>
+				</p>
+			</div>
+			<div>
+				<div> 
+					<p><span>北京黑箱科技有限公司</span> <span> Copyright 2025</span> </p>
+				</div>
+				<div> 	
+					<span> <a href="index.html">公司首页</a> </span>
+					<span> <a href="about.html">公司介绍</a> </span>
+					<span> <a href="contacts.html">联系我们</a> </span>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+
+</body>
+</html>
