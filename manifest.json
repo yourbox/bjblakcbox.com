@@ -1,0 +1,21 @@
+{
+  "name": "北京黑箱科技有限公司",
+  "short_name": "黑箱科技",
+  "description": "专注于AI数字人定制，帮助企业与个人实现科技赋能。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#003366",
+  "icons": [
+    {
+      "src": "resources/logo-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "resources/logo-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
