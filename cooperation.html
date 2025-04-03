@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="北京黑箱科技有限公司，专注于AI数字人定制，帮助企业与个人实现科技赋能。">
+    <title>北京黑箱科技 —— 加入我们，共同开创AI数字人新纪元！</title>
+
+    <style>
+
+        /* 添加全局背景图 */
+        body {
+            background-image: url('resources/76.30 background.jpg'); 
+            background-size: cover; /* 背景图覆盖整个页面 */
+            background-position: center; /* 背景图居中 */
+            background-attachment: fixed; /* 背景图固定，不随页面滚动 */
+        }
+
+        /* 确保内容区域有白色背景，覆盖背景图 */
+        .container, .container-bottom-button {
+            background-color: rgba(255, 255, 255, 0.9); /* 白色背景，稍微透明 */
+            border-radius: 8px; /* 圆角 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 阴影 */
+        }
+
+		
+		
+        /* 页面全局样式 */
+        body {
+            /* background-color: #f4f4f9; 		页面背景色 */
+            color: #333;
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+		/*  ------- Header  ------- */
+        header {
+			background-color: white;  		/* #003366; */
+            color: #003366;
+            text-align: center;
+ 			border-bottom: 1px solid red; 	/* 底部分割线 */
+       }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }		
+
+		/* Header 中的链接 */
+		header a {
+			color: #003366; 				/* 链接颜色，深蓝色 */
+            font-size: 15px; 				/* 设置字符大小 */
+            margin: 0 6px; 					/* 设置字符与图片的间距 */
+			text-decoration: none; 			/* underline 不显示下划线 */
+		}
+
+		header a:hover {
+			color: #1E90FF; 			/* 链接颜色，海蓝色 */
+			text-decoration: underline; /* 鼠标悬停时显示下划线 */
+		}
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 16px;
+        }
+
+		/* Header 中Logo图片的宽度	*/		
+		.header img {
+			width: 70px; 				/* Logo宽度 */
+			height: auto; 				/* 保持宽高比例 */
+		}
+
+		/* 设置header中心对齐 */
+		.header-center {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0 auto; /* 居中 */
+		}
+
+
+
+
+		/* -------  footer  ------- */
+		footer {
+			background-color: #003366; 		/* 底部背景色 #f8f9fa;  #333;  */			
+			color: white; 					/* 文字颜色 #333; */
+			font-size: 15px; 				/* 字体大小 */
+			text-align: center; 			/* 居中对齐 */
+			padding: 20px; 20px;			/* 内边距 */
+			margin-top: 10px; 				/* 外边距 */
+			border-top: 1px solid red;		/* #ddd; 顶部分割线 */
+		}
+
+		footer a {
+			color:white; 					/*原来颜色 #1E90FF;  链接颜色，海蓝色 */
+			text-decoration: underline; 	/* none去掉下划线 */
+			padding: 10px; auto;  			/* 内边距 */
+		}
+
+		footer a:hover {
+			color:#1E90FF; 					/* 链接颜色，海蓝色 */
+			text-decoration: underline; 	/* 鼠标悬停时显示下划线 */
+		}		
+
+		.footer img {
+			width: 100px; 					/* 二维码宽度 */
+			height: auto; 					/* 保持宽高比例 */
+			padding: 10px; auto; 			/* 内边距 */
+			margin: 10px; 0px;  0px; 0px;	/* 二维码之间的间距 */
+		}
+
+		footer p {
+			color:white; 					/*原来颜色 #1E90FF;  链接颜色，海蓝色 */
+			margin: 10px; 10px; 10px; 10px; /* 内边距 */
+		}
+
+
+/* ################################### end of 标准 header  footer ################################# */
+
+
+
+
+/* ===================================== start of Slogan 和 全页最大宽度参数 ================================= */
+
+
+		/*  ------- 固定视频的宽度，中间对齐 ------- */	
+		.slogan {
+			background-color: #003366;
+			color: white; 					/* #1E90FF; 链接颜色，海蓝色 */
+			padding: 10px; 					/* 添加适当的内边距 */
+			text-align: center;
+		}
+
+		.slogan h1 {
+			font-size: 36px; 				/* 标题文字大小 24*/
+			margin: 0 auto; 				/* 居中 */
+			margin-top: 10px; 				/* 去掉默认的外边距 */
+		}
+
+		.slogan p {
+			font-size: 20px; 				/* 副标题文字大小 */
+			margin: 5px; auto; 				/* 居中 */
+			margin-bottom: 20px; 			/* 副标题顶部间距 */
+		}		
+
+
+		/*  ------- 固定全页中间内容最大宽度 ------- */
+		/*  ------- 固定全页中间内容最大宽度 -- 标准模板用，此处被下面本页.container替代 -------
+		/* 在有主要内容的网页，经实际验证，最大1150 这个宽度页面在手机上显示时，不会左右移动 */
+        /* 但是对于次要页面，内容较少时，1150宽度显得有点太大，所以统一设置为最大宽度800*/
+		.container {
+            max-width: 1000px; 				/* 中间内容固定宽度，控制整个container覆盖的section、h、p等的宽度，放在<>中间，跟随着名称后面 */
+            margin: 0 auto; 				/* 水平居中 */
+        }
+
+
+/* ################################### end of Slogan 和 全页最大宽度参数 ################################# */
+
+
+
+
+
+/* ===================================== start of 本页内容设置 ================================= */
+
+		/* 补充container设置 —— 背景 */
+		.container {
+            background: #fff;
+			border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);			
+        }
+
+
+		/* ---------页标题 --------- */
+        .title {            
+			margin-top: 20px; 				/* 居中显示 */
+			margin-bottom: 20px; 			/* 居中显示 */
+            
+            border: 1px solid #ddd; 		/* 边框 */
+            border-radius: 10px; 			/* 圆角 */
+            background-color: #f9f9f9; 		/* 背景色 */
+        }
+        .title h2 {
+            text-align: center; 			/* 居中标题 */
+            color: #003366; 				/* 深蓝色标题 */
+            margin-bottom: 20px;
+        }
+
+		
+		
+		/* ----------------- section 参数设置 -------------------*/
+		/* 设置节标题 */
+        .section-title {
+            background-color: #003366; 
+			font-size: 28px;
+            color: white;
+			padding: 20px;
+            margin-bottom: 20px;
+        }
+
+		.section h2 {
+            font-weight: normal;
+			text-align: center; 			/* 居中显示文字 */
+			font-size: 38px; 				/* 设置字体大小为38号 */
+			color: #1E90FF; 				/* 设置海蓝色 */
+			margin: 20px;
+			padding-bottom: 20px;
+		}		
+		.section h3 {
+			font-size: 28px; 				/* 设置字体大小为38号 */
+			color: #003366; 				/* 设置深蓝色 */
+			margin-top: 60px;
+			text-align: center; 			/* 居中显示文字 */
+		}		
+		/* 设置节4级标题中心对齐 */
+		.section h4 {
+            font-weight: normal;
+			text-align: center; 			/* 居中显示文字 */
+			font-size: 36px; 				/* 设置字体大小为36号 */
+			color: #1E90FF; 				/* 设置海蓝色 */
+			margin: 20px;
+			margin-top: 0px;
+		}
+		/* 设置节5级标题中心对齐 */
+		.section h5 {
+            font-weight: normal;
+			text-align: center; 			/* 居中显示文字 */
+			font-size: 30px; 				/* 设置字体大小为36号 */
+			color: red; 					/* #1E90FF;设置海蓝色 */
+			margin: 20px;
+			margin-top: 0px;
+		}
+		/* 设置节6级标题中心对齐 */
+		.section h6 {
+            font-weight: normal;
+			text-align: center; 			/* 居中显示文字 */
+			font-size: 24px; 				/* 设置字体大小为36号 */
+			color: #1E90FF; 				/* 设置海蓝色 */
+			margin: 5px;
+			margin-top: 0px;
+		}
+
+
+
+		/* ................... 设置节文字 ........................... */
+        .section-content {
+            font-size: 16px;
+            color: #333;
+            margin: 20px;
+        } 
+
+		/* 设置节列表文字，左侧不缩进 */
+        .section-content1 {
+            font-size: 16px;
+            color: #333;
+            margin: 20px;
+            margin-left: 0px;
+        }
+        .section-content1 a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .section-content1 a:hover {
+            text-decoration: underline;
+        }
+
+
+		/* 设置节列表文字，左侧不缩进 */
+        .section-content2 {
+            font-size: 16px;
+            color: #333;
+            margin: 20px;
+            margin-left: 0px;
+			padding-bottom: 1px;
+        }
+
+		/* 设置节列表文字，左侧不缩进 */
+        .section-content3 {
+            font-size: 16px;
+            font-weight: normal;
+			text-align: center; 			/* 居中显示文字 */
+            color: #333;
+            margin: 10px;
+        }
+		.section-content3 h5 {
+            font-weight: normal;
+			text-align: center; 			/* 居中显示文字 */
+			font-size: 24px; 				/* 设置字体大小为26号 */
+			margin: 20px;
+		}		
+
+
+
+
+
+
+ 		/* ---------- 设置插图参数 ----------- */
+		/* 设置图片最大宽度，且水平居中 */
+        .img-container {
+ 			max-width: 850px;				/* 设置最大宽度 */
+			height: auto;					/* 保持宽高比例 */				
+            text-align: center;
+            margin: 0 auto; 				/* 水平居中 */
+            margin-bottom: 20px;
+       }
+
+       .img-container img {
+            max-width: 100%;
+            height: auto;
+
+        }
+
+		
+		/* 设置“mail”图片最大宽度 */
+		.image200 {
+			width:200px;
+            text-align: center;
+			margin: 0 auto; 				/* 居中 */
+            margin-bottom: 20px;
+
+			/*height: auto;*/
+			/* width: 100%;*/
+			/* max-width: 300px; 				设置最大宽度 */
+			/* height:360px; */
+		}
+		/* 设置“SOS”图片最大宽度 */
+		.image300 {
+			width:300px;
+            text-align: center;
+			margin: 0 auto; 				/* 居中 */
+            margin-bottom: 20px;
+
+			/*height: auto;*/
+			/* width: 100%;*/
+			/* max-width: 300px; 				设置最大宽度 */
+			/* height:360px; */
+		}
+
+		/* 设置“商业模式”图片最大宽度 */
+		.image500 {
+			width:500px;
+            text-align: center;
+			margin: 0 auto; 				/* 居中 */
+            margin-bottom: 20px;
+		}
+
+		
+
+
+		/*------------- 底部按钮专用，替代标准模板中的.container -----------*/
+        .container-bottom-button {
+            max-width: 1000px;
+            margin: 0 auto;   
+			padding-top: 20px; 			/* container1的内边距 */			
+			margin-bottom: 20px; 		/* container1的外边距 */			
+            background: #fff;			/* 白色 */
+			border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }		
+
+
+ 		/*  ------- 申请按钮设置&申请表下载 ------- */
+		.center-button-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%; 					/* 调整为适合的高度，例如页面中需要的高度 */
+			margin-bottom: 0px;
+			padding-bottom: 30px; 			/* 按钮的内边距 */
+		}			
+
+		.apply-button, .download-button {
+			background-color: #1E90FF; 		/* 按钮的深蓝色背景 */
+			color: white; 					/* 按钮文字颜色 */
+			border: none;
+			border-radius: 8px; 			/* 圆角 */
+			padding: 10px 50px; 			/* 按钮的内边距 */
+			font-size: 38px; 				/* 字体大小 */
+			font-weight: bold; 			 	/* 字体加粗 */
+			text-align: center;
+			text-decoration: none; 			/* 去掉超链接的下划线 */
+			cursor: pointer;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 						/* 添加按钮的阴影 */
+			transition: background-color 0.3s ease, transform 0.2s ease; 	/* 鼠标悬停时的效果 */
+		}			
+
+		.apply-button:hover, .download-button:hover {
+			background-color: green; 		/* #0056b3;鼠标悬停时的深蓝色 */
+			transform: scale(1.05); 		/* 鼠标悬停时的放大效果 */
+		}			
+
+		.apply-button:active, .download-button:active {
+			background-color: #003f7f; 		/* 按下时的颜色 */
+			transform: scale(0.98); 		/* 按下时的缩小效果 */
+		}		
+
+
+
+		/* ----------------- FAQ -------------- */
+        .faq, .privacy-policy {
+			margin: 20px;
+			padding: 5px; auto;
+        }
+        .faq h2, .privacy-policy h2 {
+            color: #003366;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+        }
+        .faq ul, .privacy-policy ul {
+            list-style-type: none;
+            padding-left: 20px;				/* 左侧缩进 */ 
+        }
+        .faq li, .privacy-policy li {
+            margin-bottom: 10px;		
+        }
+        .faq li strong, .privacy-policy li strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+		.faq-p {
+			margin-left: 20px;
+		}
+
+/* ################################### end of 本页内容设置 ################################# */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+			margin-left: 12px;
+			margin-bottom: 12px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+			text-align: center;
+        }
+        .highlight {
+            background-color: #e6f3ff; /* 高亮背景色 */
+            padding: 10px;
+			padding-left: 20px;
+			margin-left: 12px;
+            border-radius: 5px;
+        }
+        .contact-info {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+	</style>
+</head>
+<body>
+
+
+	<!-- Header Section -->
+    <header>    
+		<div class="header-center"> 
+			<span class="header img"> <a href="index.html"> <img src="resources\76.50.2 logo_title_trans.png" alt="公司Logo"> </a> </span>
+			<span> <a href="opportunity.html"> 机遇 </a> </span>
+			<span> <a href="cooperation.html"> 合作 </a> </span>
+			<span> <a href="mechanism.html"> 机制 </a> </span>
+			<span> <a href="entitlements.html"> 权益 </a> </span>
+			<span> <a href="apply.html"> 申请 </a> </span>
+         </div>
+	</header>
+
+
+
+    <!-- Slogan section -->
+    <section class="slogan"> 		
+        <h1>参与AI，共同开创AI数字人新纪元！</h1>
+        <p>成为AI数字人定制领域的先锋，共享未来科技带来的机遇！</p>
+    </section>
+
+
+
+
+	<!-- ============================================= start of 本页”成功“内容 ===========================================  -->
+
+	
+
+	<!-- 标题 -->
+	<section class="container">		
+		<div class="title">
+			<h2>合作</h2>
+		</div>
+ 	</section>
+
+
+
+	<!-- *********************************************************** Page: 合作 *************************************************************** -->
+
+    <!-- How to cooperate Section-->
+    <section class="container">
+        <h2 class="section-title">合作模式</h2>
+        <div class="section-content1">
+            <ul>
+                <li><strong>合作模式：</strong>多种合作模式。下面没有特殊说明，所涉及到的“合伙人”一般都是指合伙人模式。</li>
+					<ul>
+						<li>创业合伙人模式；</li>
+						<li>代理商模式；</li>
+						<li>战略合作模式；</li>
+						<li>技术合作伙伴；</li>
+						<li>定制服务提供商。</li>
+					</ul>
+                <li><strong>创业合伙人资格级别</strong></li>
+					<ul>
+						<li>普通；</li>
+						<li>高级；</li>
+						<li>VIP。</li>
+					</ul>
+                <li><strong>合伙人要求</strong></li>
+					<ul>
+						<li>最好具备一定的电脑操作能力（具备视频编辑能力优先）；</li>
+						<li>最好具备一定的市场推广能力和资源；</li>
+						<li>每周能自由安排工作时间5～10小时。</li>
+					</ul>
+                <li><strong>战略合伙人：</strong>在创业合伙人中择优选择合作对象，回报更加优厚。</li>
+                <li><strong>其他合作形式：</strong>个别商谈。</li>
+            </ul>			
+        </div>
+		
+        <div class="img-container">
+            <img src="resources/75.7 合伙人福利.jpg" controls alt="How to cooperate">
+        </div>
+		<div class="section">
+            <h2>我们不是在卖产品，我们是在帮他们！</h2>
+        </div> 		     
+    </section>
+
+	 
+   <!-- How to join Section -->
+    <section class="container">
+        <h2 class="section-title">申请流程</h2>
+        <!-- <div class="section-content1">
+            <ul>
+				<li><strong>选择等级</strong>：根据自身资金实力和风险承受能力，选择VIP合伙人、高级合伙人或普通合伙人；</li>
+				<li><strong>签订协议</strong>：与公司签订正式合伙人协议，明确双方权益和义务，确保合伙人权利和资格；</li>
+				<li><strong>缴纳费用</strong>：根据所选等级，缴纳合伙人资格费用；</li>
+				<li><strong>开通账户</strong>：公司给合伙人开通账户，提供工具和资源。</li>
+            </ul>		
+        </div>	 -->	
+        <div class="img-container">
+            <img src="resources/77.2 申请流程.png" controls alt="How to apply">
+        </div>
+		<div class="section">
+            <h2>我们不是在卖产品，我们是在帮他们！</h2>
+        </div> 		     
+    </section>
+	
+
+
+	<!-- Contact us Section -->
+    <section class="container">
+        <h2 class="section-title">联系我们</h2>
+        <div class="section-content">
+            <p>如果您对我们的合伙人方案感兴趣，或者有任何问题需要咨询，欢迎随时联系我们：</p>
+        </div>		
+        <div class="section-content1">
+            <ul>
+				<li><strong>项目咨询专用邮箱</strong>：<a href="mailto:zy24@bjblackbox.com">zy24@bjblackbox.com</a></li>
+            </ul>			
+        </div>		
+        <div class="img-container">
+            <a href="mailto:zy24@bjblackbox.com"> <img class="image200" src="resources/76.15 专用联系邮箱.jpg" controls alt="mail"> </a>
+        </div>
+		<div class="section">
+            <h2>我们不是在卖产品，我们是在帮他们！</h2>
+        </div> 		     
+    </section>
+	
+
+
+	<!-- Apply Buttons Section -->
+    <section class="container-bottom-button">
+		<div class="section">
+            <h4>申请成为合伙人</h4>
+        </div>	
+		<div class="center-button-container">			
+			<a href="apply.html" class="apply-button">去申请</a>
+		</div>		
+     </section>
+
+
+
+	 <!-- FAQ Section -->	 
+	<section class="container">
+        <div class="faq">
+            <h2>常见问题解答（FAQ）</h2>
+            <ul>
+                <li>
+                    <strong>1. 如何申请成为合伙人？</strong>
+                    <p class="faq-p">只需填写申请表单，我们将会在第一时间联系您。</p>
+                </li>
+                <li>
+                    <strong>2. 我能在哪些平台推广AI数字人？</strong>
+                    <p class="faq-p">您可以通过社交媒体、校园推广、线上平台等进行推广。</p>
+                </li>
+                <li>
+                    <strong>3. 是否需要投资资金？</strong>
+                    <p class="faq-p">加入我们的合伙人计划只需支付极低不足万元的合伙人代理资格费（代理资格费不退）。</p>
+                </li>
+                <li>
+                    <strong>4. 合伙人能获得哪些支持？</strong>
+                    <p class="faq-p">公司提供完善的培训和奖励机制、市场推广支持，帮助合伙人实现可观收入。</p>
+                </li>
+                <li>
+                    <strong>5. 合伙人能获得哪些培训？</strong>
+                    <p class="faq-p">我们提供产品使用指导、数字人视频制作、数字人定制录制等线上线下培训。</p>
+                </li>
+            </ul>
+		</div>
+    </section>
+
+
+
+
+	
+	<!-- ################################################ end of 本页内容 ############################################  -->
+
+
+
+
+	<!-- Footer Section -->	
+    <footer>
+		<div> 
+			<div>
+				<p>微信公众号   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 官方抖音 </p>
+				<p class="footer img">
+					<span> <img src="resources\76.53 微信公众号.jpg" alt="微信公众号" > </span>
+					<span> <img src="resources\76.52.3 官方抖音_transparent_small.png" alt="官方抖音">  </span>
+				</p>
+			</div>
+			<div>
+				<div> 
+					<p><span>北京黑箱科技有限公司</span> <span> Copyright 2025</span> </p>
+				</div>
+				<div> 	
+					<span> <a href="index.html">公司首页</a> </span>
+					<span> <a href="about.html">公司介绍</a> </span>
+					<span> <a href="contacts.html">联系我们</a> </span>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+
+</body>
+</html>
